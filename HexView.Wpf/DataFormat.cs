@@ -1,4 +1,4 @@
-﻿namespace HexView.Wpf
+﻿namespace HexView.WinUI
 {
     /// <summary>
     /// Enumerates the format to display integral data in.

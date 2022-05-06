@@ -1,4 +1,4 @@
-﻿namespace HexView.Wpf.Converters
+﻿namespace HexView.WinUI.Converters
 {
     using System;
     using System.Globalization;

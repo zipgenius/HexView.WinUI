@@ -1,4 +1,4 @@
-﻿namespace HexView.Wpf
+﻿namespace HexView.WinUI
 {
     /// <summary>
     /// Enumerates how the data (bytes read from the buffer) is to be interpreted when displayed.

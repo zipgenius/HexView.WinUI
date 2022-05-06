@@ -1,4 +1,4 @@
-﻿namespace HexView.Wpf
+﻿namespace HexView.WinUI
 {
     /// <summary>
     /// Enumerates the signedness of the data to display.

@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HexView.Wpf\HexView.Wpf.csproj" />
+    <ProjectReference Include="..\HexView.Wpf\HexView.WinUI.csproj" />
   </ItemGroup>
 
 </Project>

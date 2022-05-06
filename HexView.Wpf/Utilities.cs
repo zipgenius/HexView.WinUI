@@ -1,4 +1,4 @@
-﻿namespace HexView.Wpf
+﻿namespace HexView.WinUI
 {
     using System;
 

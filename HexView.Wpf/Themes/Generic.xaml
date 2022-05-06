@@ -1,10 +1,8 @@
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:HexView.Wpf"
-    xmlns:collections="clr-namespace:System.Collections;assembly=System.Runtime.Extensions"
-    xmlns:converters="clr-namespace:HexView.Wpf.Converters"
-    xmlns:system="clr-namespace:System;assembly=System.Memory">
+    xmlns:local="using:HexView.WinUI"
+   >
     
     <Style TargetType="{x:Type local:HexViewer}">
         <Setter Property="Background"
@@ -31,20 +29,20 @@
                         </Grid.RowDefinitions>
 
                         <Canvas Name="PART_Canvas" Background="{TemplateBinding Background}" Margin="5">
-                            <Canvas.ContextMenu>
+                            <!-- Canvas.ContextMenu>
                                 <ContextMenu>
                                     <ContextMenu.Resources>
-                                        <converters:EqualityConverter x:Key="EqualityConverter"/>
-                                        <converters:MultiEqualityConverter x:Key="MultiEqualityConverter"/>
+                                        <converters1:EqualityConverter x:Key="EqualityConverter"/>
+                                        <converters1:MultiEqualityConverter x:Key="MultiEqualityConverter"/>
                                     </ContextMenu.Resources>
 
                                     <MenuItem Header="No Data" IsCheckable="True">
                                         <MenuItem.IsChecked>
                                             <Binding RelativeSource="{RelativeSource TemplatedParent}" Path="ShowData" Converter="{StaticResource EqualityConverter}">
                                                 <Binding.ConverterParameter>
-                                                    <system:Boolean>
+                                                    <system1:Boolean>
                                                         false
-                                                    </system:Boolean>
+                                                    </system1:Boolean>
                                                 </Binding.ConverterParameter>
                                             </Binding>
                                         </MenuItem.IsChecked>
@@ -55,17 +53,17 @@
                                             <MultiBinding Converter="{StaticResource MultiEqualityConverter}">
                                                 <MultiBinding.ConverterParameter>
                                                     <collections:ArrayList>
-                                                        <system:Boolean>
+                                                        <system1:Boolean>
                                                             true
-                                                        </system:Boolean>
+                                                        </system1:Boolean>
 
-                                                        <local:DataType>
+                                                        <local1:DataType>
                                                             Integer
-                                                        </local:DataType>
+                                                        </local1:DataType>
 
-                                                        <system:Int32>
+                                                        <system1:Int32>
                                                             1
-                                                        </system:Int32>
+                                                        </system1:Int32>
                                                     </collections:ArrayList>
                                                 </MultiBinding.ConverterParameter>
 
@@ -81,17 +79,17 @@
                                             <MultiBinding Converter="{StaticResource MultiEqualityConverter}">
                                                 <MultiBinding.ConverterParameter>
                                                     <collections:ArrayList>
-                                                        <system:Boolean>
+                                                        <system1:Boolean>
                                                             true
-                                                        </system:Boolean>
+                                                        </system1:Boolean>
 
-                                                        <local:DataType>
+                                                        <local1:DataType>
                                                             Integer
-                                                        </local:DataType>
+                                                        </local1:DataType>
 
-                                                        <system:Int32>
+                                                        <system1:Int32>
                                                             2
-                                                        </system:Int32>
+                                                        </system1:Int32>
                                                     </collections:ArrayList>
                                                 </MultiBinding.ConverterParameter>
 
@@ -107,17 +105,17 @@
                                             <MultiBinding Converter="{StaticResource MultiEqualityConverter}">
                                                 <MultiBinding.ConverterParameter>
                                                     <collections:ArrayList>
-                                                        <system:Boolean>
+                                                        <system1:Boolean>
                                                             true
-                                                        </system:Boolean>
+                                                        </system1:Boolean>
 
-                                                        <local:DataType>
+                                                        <local1:DataType>
                                                             Integer
-                                                        </local:DataType>
+                                                        </local1:DataType>
 
-                                                        <system:Int32>
+                                                        <system1:Int32>
                                                             4
-                                                        </system:Int32>
+                                                        </system1:Int32>
                                                     </collections:ArrayList>
                                                 </MultiBinding.ConverterParameter>
 
@@ -133,17 +131,17 @@
                                             <MultiBinding Converter="{StaticResource MultiEqualityConverter}">
                                                 <MultiBinding.ConverterParameter>
                                                     <collections:ArrayList>
-                                                        <system:Boolean>
+                                                        <system1:Boolean>
                                                             true
-                                                        </system:Boolean>
+                                                        </system1:Boolean>
 
-                                                        <local:DataType>
+                                                        <local1:DataType>
                                                             Integer
-                                                        </local:DataType>
+                                                        </local1:DataType>
 
-                                                        <system:Int32>
+                                                        <system1:Int32>
                                                             8
-                                                        </system:Int32>
+                                                        </system1:Int32>
                                                     </collections:ArrayList>
                                                 </MultiBinding.ConverterParameter>
 
@@ -161,17 +159,17 @@
                                             <MultiBinding Converter="{StaticResource MultiEqualityConverter}">
                                                 <MultiBinding.ConverterParameter>
                                                     <collections:ArrayList>
-                                                        <system:Boolean>
+                                                        <system1:Boolean>
                                                             true
-                                                        </system:Boolean>
+                                                        </system1:Boolean>
 
-                                                        <local:DataType>
+                                                        <local1:DataType>
                                                             FloatingPoint
-                                                        </local:DataType>
+                                                        </local1:DataType>
 
-                                                        <system:Int32>
+                                                        <system1:Int32>
                                                             4
-                                                        </system:Int32>
+                                                        </system1:Int32>
                                                     </collections:ArrayList>
                                                 </MultiBinding.ConverterParameter>
 
@@ -187,17 +185,17 @@
                                             <MultiBinding Converter="{StaticResource MultiEqualityConverter}">
                                                 <MultiBinding.ConverterParameter>
                                                     <collections:ArrayList>
-                                                        <system:Boolean>
+                                                        <system1:Boolean>
                                                             true
-                                                        </system:Boolean>
+                                                        </system1:Boolean>
 
-                                                        <local:DataType>
+                                                        <local1:DataType>
                                                             FloatingPoint
-                                                        </local:DataType>
+                                                        </local1:DataType>
 
-                                                        <system:Int32>
+                                                        <system1:Int32>
                                                             8
-                                                        </system:Int32>
+                                                        </system1:Int32>
                                                     </collections:ArrayList>
                                                 </MultiBinding.ConverterParameter>
 
@@ -214,9 +212,9 @@
                                         <MenuItem.IsChecked>
                                             <Binding RelativeSource="{RelativeSource TemplatedParent}" Path="DataFormat" Converter="{StaticResource EqualityConverter}">
                                                 <Binding.ConverterParameter>
-                                                    <local:DataFormat>
+                                                    <local1:DataFormat>
                                                         Decimal
-                                                    </local:DataFormat>
+                                                    </local1:DataFormat>
                                                 </Binding.ConverterParameter>
                                             </Binding>
                                         </MenuItem.IsChecked>
@@ -225,13 +223,13 @@
                                             <MultiBinding Converter="{StaticResource MultiEqualityConverter}">
                                                 <MultiBinding.ConverterParameter>
                                                     <collections:ArrayList>
-                                                        <system:Boolean>
+                                                        <system1:Boolean>
                                                             true
-                                                        </system:Boolean>
+                                                        </system1:Boolean>
 
-                                                        <local:DataType>
+                                                        <local1:DataType>
                                                             Integer
-                                                        </local:DataType>
+                                                        </local1:DataType>
                                                     </collections:ArrayList>
                                                 </MultiBinding.ConverterParameter>
 
@@ -245,9 +243,9 @@
                                         <MenuItem.IsChecked>
                                             <Binding RelativeSource="{RelativeSource TemplatedParent}" Path="DataFormat" Converter="{StaticResource EqualityConverter}">
                                                 <Binding.ConverterParameter>
-                                                    <local:DataFormat>
+                                                    <local11:DataFormat>
                                                         Hexadecimal
-                                                    </local:DataFormat>
+                                                    </local11:DataFormat>
                                                 </Binding.ConverterParameter>
                                             </Binding>
                                         </MenuItem.IsChecked>
@@ -256,13 +254,13 @@
                                             <MultiBinding Converter="{StaticResource MultiEqualityConverter}">
                                                 <MultiBinding.ConverterParameter>
                                                     <collections:ArrayList>
-                                                        <system:Boolean>
+                                                        <system1:Boolean>
                                                             true
-                                                        </system:Boolean>
+                                                        </system1:Boolean>
 
-                                                        <local:DataType>
+                                                        <local1:DataType>
                                                             Integer
-                                                        </local:DataType>
+                                                        </local1:DataType>
                                                     </collections:ArrayList>
                                                 </MultiBinding.ConverterParameter>
 
@@ -278,9 +276,9 @@
                                         <MenuItem.IsChecked>
                                             <Binding RelativeSource="{RelativeSource TemplatedParent}" Path="DataSignedness" Converter="{StaticResource EqualityConverter}">
                                                 <Binding.ConverterParameter>
-                                                    <local:DataSignedness>
+                                                    <local1:DataSignedness>
                                                         Signed
-                                                    </local:DataSignedness>
+                                                    </local1:DataSignedness>
                                                 </Binding.ConverterParameter>
                                             </Binding>
                                         </MenuItem.IsChecked>
@@ -289,17 +287,17 @@
                                             <MultiBinding Converter="{StaticResource MultiEqualityConverter}">
                                                 <MultiBinding.ConverterParameter>
                                                     <collections:ArrayList>
-                                                        <system:Boolean>
+                                                        <system1:Boolean>
                                                             true
-                                                        </system:Boolean>
+                                                        </system1:Boolean>
 
-                                                        <local:DataType>
+                                                        <local1:DataType>
                                                             Integer
-                                                        </local:DataType>
+                                                        </local1:DataType>
 
-                                                        <local:DataFormat>
+                                                        <local11:DataFormat>
                                                             Decimal
-                                                        </local:DataFormat>
+                                                        </local11:DataFormat>
                                                     </collections:ArrayList>
                                                 </MultiBinding.ConverterParameter>
 
@@ -314,9 +312,9 @@
                                         <MenuItem.IsChecked>
                                             <Binding RelativeSource="{RelativeSource TemplatedParent}" Path="DataSignedness" Converter="{StaticResource EqualityConverter}">
                                                 <Binding.ConverterParameter>
-                                                    <local:DataSignedness>
+                                                    <local1:DataSignedness>
                                                         Unsigned
-                                                    </local:DataSignedness>
+                                                    </local1:DataSignedness>
                                                 </Binding.ConverterParameter>
                                             </Binding>
                                         </MenuItem.IsChecked>
@@ -325,17 +323,17 @@
                                             <MultiBinding Converter="{StaticResource MultiEqualityConverter}">
                                                 <MultiBinding.ConverterParameter>
                                                     <collections:ArrayList>
-                                                        <system:Boolean>
+                                                        <system1:Boolean>
                                                             true
-                                                        </system:Boolean>
+                                                        </system1:Boolean>
 
-                                                        <local:DataType>
+                                                        <local1:DataType>
                                                             Integer
-                                                        </local:DataType>
+                                                        </local1:DataType>
 
-                                                        <local:DataFormat>
+                                                        <local11:DataFormat>
                                                             Decimal
-                                                        </local:DataFormat>
+                                                        </local11:DataFormat>
                                                     </collections:ArrayList>
                                                 </MultiBinding.ConverterParameter>
 
@@ -352,9 +350,9 @@
                                         <MenuItem.IsChecked>
                                             <Binding RelativeSource="{RelativeSource TemplatedParent}" Path="ShowText" Converter="{StaticResource EqualityConverter}">
                                                 <Binding.ConverterParameter>
-                                                    <system:Boolean>
+                                                    <system1:Boolean>
                                                         false
-                                                    </system:Boolean>
+                                                    </system1:Boolean>
                                                 </Binding.ConverterParameter>
                                             </Binding>
                                         </MenuItem.IsChecked>
@@ -365,13 +363,13 @@
                                             <MultiBinding Converter="{StaticResource MultiEqualityConverter}">
                                                 <MultiBinding.ConverterParameter>
                                                     <collections:ArrayList>
-                                                        <system:Boolean>
+                                                        <system1:Boolean>
                                                             true
-                                                        </system:Boolean>
+                                                        </system1:Boolean>
 
-                                                        <local:TextFormat>
+                                                        <local1:TextFormat>
                                                             Ascii
-                                                        </local:TextFormat>
+                                                        </local1:TextFormat>
                                                     </collections:ArrayList>
                                                 </MultiBinding.ConverterParameter>
 
@@ -389,7 +387,7 @@
                                         </MenuItem.Command>
                                     </MenuItem>
                                 </ContextMenu>
-                            </Canvas.ContextMenu>
+                            </ -->
                         </Canvas>
 
                         <ScrollBar Name="PART_VerticalScrollBar" Grid.Column="1"/>

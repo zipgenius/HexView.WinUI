@@ -1,4 +1,4 @@
-﻿namespace HexView.Wpf
+﻿namespace HexView.WinUI
 {
     /// <summary>
     /// Enumerates the text section encodings/formats that the control is able to display.
